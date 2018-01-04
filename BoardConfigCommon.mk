@@ -26,11 +26,11 @@
 # Inherit from oppo-common
 -include device/oppo/common/BoardConfigCommon.mk
 
-PLATFORM_PATH := device/oneplus/msm8998-common
+PLATFORM_PATH := device/motorola/msm8998-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
-BOARD_VENDOR := oneplus
+BOARD_VENDOR := motorola
 
 # we are too big to fit in
 PRODUCT_SKIP_FINGERPRINT_FROM_FILE := true
@@ -75,8 +75,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/oneplus/msm8998
-TARGET_KERNEL_CONFIG := oneplus5_defconfig
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8998
+TARGET_KERNEL_CONFIG := nash_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # Enable real time lockscreen charging current values
@@ -229,8 +229,8 @@ DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
 # Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
-TARGET_INIT_VENDOR_LIB := libinit_oneplus_msm8998
-TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus_msm8998
+TARGET_INIT_VENDOR_LIB := libinit_nash_msm8998
+TARGET_RECOVERY_DEVICE_MODULES := libinit_nash_msm8998
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
